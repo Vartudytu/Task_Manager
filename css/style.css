@@ -1,0 +1,188 @@
+
+
+ /* Собственные стили CSS под элементы таблиц и анимаций */
+
+ 
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}	
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  color: #ffffff;
+  background-color: #337ab7;
+  width: 100%;
+}
+ 
+.boxer-footer {
+  text-indent: 6em;
+  font-size: 12px;
+  padding: 2px;
+  text-align: center;
+}
+
+.boxer-footer p {
+  margin-bottom: 0.2em; /* Отступ снизу */
+}
+ 
+.error-login {
+  text-align: center;
+}
+
+.login-box {
+  padding-top: 20%;
+}
+
+.table-login {
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.table-login-sel {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.table-login-sel tr { 
+  text-align: left;
+}
+   
+.table-login-sel td {
+}
+   
+.table-login-sel tr, td {
+  border: 1px solid #ffffff;
+  padding: 4px;
+}
+   
+.lefter-table {
+  text-align:right;
+  font-size:100%;
+  font-weight:700;
+  color:#999999;
+}
+
+.righter-table {
+  text-align:left;
+  color:#1756a7;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-show {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+  width: 30%;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.popup-show h2 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+.popup-show .close {
+  color: #ff0202;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 500ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.popup-show .close:hover {
+  color: #0199f5;
+}
+.popup-show .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.show-inputs {
+  padding-bottom: 15px;
+}
+
+.show-image-preview {
+  width: 20%;
+  height: 20%;
+}
+
+.bigger-form {
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.sorter-line {
+  padding-bottom: 20px;
+}
+
+.m-r-1em { 
+  margin-right:1em; 
+}
+
+.m-b-1em { 
+  margin-bottom:1em; 
+}
+
+.m-l-1em { 
+  margin-left:1em; 
+}
+
+.mt0 { 
+  margin-top:0; 
+}
