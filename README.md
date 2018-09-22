@@ -1,5 +1,7 @@
 # Task_Manager
+
 Simple PHP MuSQL Task Manager - with JS modules
+
 Author - Vasilenko Artem
 
 Код написано на PHP, JS, HTML и CSS, база данный используется MySQL
