@@ -23,20 +23,14 @@ INSERT INTO `tasks` (`id`, `name`, `email`, `description`, `value`, `image`) VAL
 
 
 --
--- Индексы таблицы `tasks`
---
-ALTER TABLE `tasks`
-ADD PRIMARY KEY (`id`);
-
-
---
 -- Структура таблицы `users`
 --
 CREATE TABLE `users` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `username` varchar(200) NOT NULL,
-  `password` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `password` varchar(200) NOT NULL,
+   PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
 --
@@ -45,9 +39,3 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'admin', '123');
-
---
--- Индексы таблицы `tasks`
---
-ALTER TABLE `users`
-ADD PRIMARY KEY (`id`);
