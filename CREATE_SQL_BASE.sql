@@ -2,7 +2,7 @@
 --
 -- Структура таблицы `tasks`
 --
-CREATE TABLE IF NOT EXISTS `products` (
+CREATE TABLE IF NOT EXISTS `tasks` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
