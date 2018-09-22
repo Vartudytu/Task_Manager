@@ -7,8 +7,8 @@ CREATE TABLE IF NOT EXISTS `products` (
   `name` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
   `description` text NOT NULL,
-  `value` varchar(10) double NOT NULL,
-  `image` varchar(200) datetime NOT NULL,
+  `value` varchar(10) NOT NULL,
+  `image` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
