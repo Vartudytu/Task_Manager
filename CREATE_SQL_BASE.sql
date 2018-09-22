@@ -2,14 +2,15 @@
 --
 -- Структура таблицы `tasks`
 --
-CREATE TABLE `tasks` (
-  `id` int(11) NOT NULL,
-  `name` varchar(128) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `email` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `description` text CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `value` varchar(10) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
-  `image` varchar(200) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+CREATE TABLE IF NOT EXISTS `products` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(128) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  `description` text NOT NULL,
+  `value` varchar(10) double NOT NULL,
+  `image` varchar(200) datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
 -- Дамп данных таблицы `tasks`
@@ -32,10 +33,10 @@ ADD PRIMARY KEY (`id`);
 -- Структура таблицы `users`
 --
 CREATE TABLE `users` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `username` varchar(200) NOT NULL,
   `password` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 
 --
